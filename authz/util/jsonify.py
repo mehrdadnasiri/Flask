@@ -28,4 +28,3 @@ def jsonify( state={}, metadata={}, status=200, code=100, headers={}):
         data["message"] = DEBUG_MSG_CODES[str(code)]
     data["code"] = code
     return data, status, headers
-    
