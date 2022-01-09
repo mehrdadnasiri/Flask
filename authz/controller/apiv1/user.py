@@ -8,7 +8,7 @@ class UserController:
     def get_user(user_id):
         return jsonify(status=501, code=107) #Not Implemented
 
-    def create_user(user_id):
+    def create_user():
         return jsonify(status=501, code=107) #Not Implemented
 
     def update_user(user_id):
