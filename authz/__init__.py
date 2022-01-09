@@ -1,1 +1,1 @@
-from authz.authz import create_app
+from authz.authz import create_app 
