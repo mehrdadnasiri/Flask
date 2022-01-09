@@ -4,14 +4,14 @@ from authz.resource.apiv1.user import UserResource
 api.add_resource(
     UserResource,
     "/users",
-    method=["GET","POST"],
+    methods=["GET","POST"],
     endpoint="users"
 )
 
 api.add_resource(
     UserResource,
     "/users/<userid>",
-    method=["GET","PATCH","DELETE"],
+    methods=["GET","PATCH","DELETE"],
     endpoint="user"
 )
 
