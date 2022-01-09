@@ -7,10 +7,9 @@ api.add_resource(
     methods=["GET","POST"],
     endpoint="users"
 )
-
 api.add_resource(
     UserResource,
-    "/users/<userid>",
+    "/users/<user_id>",
     methods=["GET","PATCH","DELETE"],
     endpoint="user"
 )
