@@ -10,7 +10,7 @@ class Config:
 
     SECRET_KEY=  environ.get("TECHLAND_AUTHZ_SECRET_KEY", "HARD-HARD-HARD-SECRET-KEY")
 
-    
+    TIMEZONE =  environ.get("TECHLAND_AUTHZ_TIMEZONE", "ASIA/Tehran")
     ############################Database Config ###################################
     SQLALCHEMY_DATABASE_URI = environ.get("TECHLAND_AUTHZ_DATABASE_URI", "None")
     SQLALCHEMY_ECHO = DEBUG
