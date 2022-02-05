@@ -1,7 +1,7 @@
 from datetime import datetime
 from pytz import timezone, UTC
 
-from athz.config import Config
+from authz.config import Config
 
 def now(name=Config.TIMEZONE):
     tz = timezone(name)
