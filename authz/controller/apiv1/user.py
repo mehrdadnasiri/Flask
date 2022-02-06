@@ -1,4 +1,5 @@
 from authz.model import User
+from authz.schema.apiv1 import UserSchema
 from authz.util import jsonify
 
 class UserController:
