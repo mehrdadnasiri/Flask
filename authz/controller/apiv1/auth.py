@@ -36,7 +36,7 @@ class AuthController:
             return jsonify(status=401, code=111) #invalide password
         if user.expires_at < now():
             return jsonify(status=401, code=108)# user is expired 
-        if user.status != Config.USER_ALL_STATUS
+        if user.status != Config.USER_ALL_STATUS:
             return jsonify(status=401 ,code=109)#bad user status
         current_time = time()
         try:
